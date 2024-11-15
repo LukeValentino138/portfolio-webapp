@@ -1,37 +1,41 @@
 import React from 'react'
-import aboutImg from "../assets/about.jpg"
 import { ABOUT_TEXT } from '../constants/constants'
 import { motion } from 'framer-motion'
 
 const About = () => {
-  return (
-    <div className="border-b border-neutral-900 pb-4">
-      <h1 className="my-20 text-center text-4xl">
-        About 
-        <span className="text-neutral-500"> Me</span>
-      </h1>
-      <div className="flex flex-wrap">
-        <motion.div 
-        whileInView={{opacity:1, x: 0}}
-        initial={{opacity:0, x:-100}}
-        transition={{duration:0.5}}
-        className="w-full lg:w-1/2 lg:p-8">
-            <div className="flex items-center justify-center">
-                <img className="rounded-2xl" src={aboutImg} alt="" />
-            </div>
-        </motion.div>
-        <motion.div 
-        whileInView={{opacity: 1, x:0}}
-        initial={{opacity:0, x:100}}
-        transition={{duration:0.5}}
-        className="w-full lg:w-1/2">
-            <div className="flex justify-center lg:justify-start">
-                <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
-            </div>
-        </motion.div>
-      </div>
-    </div>
-  )
-}
+  // Animation variants for the text
+  const textVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
 
-export default About
+  return (
+    <section className="px-6 py-10" id="about">
+      <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-10">
+        About
+      </h1>
+      <div className="h-1 w-20 mb-8 bg-white"></div>
+
+      <div className="max-w-4xl mx-auto">
+        {ABOUT_TEXT.paragraphs.map((paragraph, index) => (
+          <motion.p
+            key={index}
+            className="text-xl md:text-2xl lg:text-4xl mb-10 leading-relaxed"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={textVariants}
+          >
+            {paragraph}
+          </motion.p>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default About;
