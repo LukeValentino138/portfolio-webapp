@@ -33,7 +33,7 @@ export const EXPERIENCES = [
     title: "Machine Learning Research Assistant at Central Queensland University",
     location: "Melbourne, Australia",
     description: [
-      "Leading the development of procedural dataset augmentation algorithms to adapt datasets to variable conditions.",
+      "Responsible for the development of procedural dataset augmentation algorithms to adapt datasets to variable conditions.",
       "Integrating machine learning models into a web application and producing statistical analysis.",
       "Creating innovative techniques for depth, length, and weight estimation of fish using point clouds and image segmentation models.",
     ],
