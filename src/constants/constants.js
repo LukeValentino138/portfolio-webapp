@@ -35,7 +35,7 @@ export const EXPERIENCES = [
     description: [
       "Responsible for the whole software development lifecyle of the Labourly mobile application, from initial architecture to deployment.",
       "Defined architecture and networking for mobile application that allows for handling of sensitive tax and medical information in compliance with ISO27001 standard and Australian regulations.",
-      "Designed and am implementing API’s in Django Rest Framework to be deployed as an AWS Fargate task.",
+      "Designed and implemented APIs, authentication, and middleware in Django Rest Framework for deployment on AWS Fargate.",
       "Collaborated with UI/UX designer to create consistent and clear user interface and flows.",
     ],
   },
