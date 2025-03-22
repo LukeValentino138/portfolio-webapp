@@ -29,12 +29,23 @@ export const ABOUT_TEXT = {
 
 export const EXPERIENCES = [
   {
-    yearRange: "March 2024 — Now",
-    title: "Machine Learning Research Assistant at Central Queensland University",
+    yearRange: "February 2025 - Now",
+    title: "Software Engineer at Labourly",
     location: "Melbourne, Australia",
     description: [
-      "Responsible for the development of procedural dataset augmentation algorithms to adapt datasets to variable conditions.",
-      "Integrating machine learning models into a web application and producing statistical analysis.",
+      "Responsible for the whole software development lifecyle of the Labourly mobile application, from initial architecture to deployment.",
+      "Defined architecture and networking for mobile application that allows for handling of sensitive tax and medical information in compliance with ISO27001 standard and Australian regulations.",
+      "Designed and am implementing API’s in Django Rest Framework to be deployed as an AWS Fargate task.",
+      "Collaborated with UI/UX designer to create consistent and clear user interface and flows.",
+    ],
+  },
+  {
+    yearRange: "March 2024 — March 2025",
+    title: "Research Assistant at Central Queensland University",
+    location: "Melbourne, Australia",
+    description: [
+      "Collaborated with a team to design and develop a web application for processing and analysing video files using object detection models.",
+      "Developed algorithm for procedural dataset augmentation, increasing object detection model accuracy from 39.2% to 75.4%. Generating 13,698 synthetic annotations and 2,211 synthetic images to improve model robustness.",
       "Creating innovative techniques for depth, length, and weight estimation of fish using point clouds and image segmentation models.",
     ],
   },
@@ -48,6 +59,7 @@ export const EXPERIENCES = [
       "Facilitated client participation in community activities, fostering social skill development.",
     ],
   },
+
 ];
 
 export const PROJECTS = [
@@ -67,7 +79,7 @@ export const PROJECTS = [
 
 
 export const CONTACT_CONTENT = {
-  headline: "LET'S WORK ON SOMETHING GREAT",
+  // headline: "LET'S WORK ON SOMETHING GREAT",
   description:
     "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
   email: "LukeValentino138@gmail.com",
