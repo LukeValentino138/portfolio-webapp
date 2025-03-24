@@ -33,10 +33,10 @@ export const EXPERIENCES = [
     title: "Software Engineer at Labourly",
     location: "Melbourne, Australia",
     description: [
-      "Responsible for the whole software development lifecyle of the Labourly mobile application, from initial architecture to deployment.",
+      "Responsible for the whole software development lifecycle of the Labourly mobile application, from initial architecture to deployment.",
       "Defined architecture and networking for mobile application that allows for handling of sensitive tax and medical information in compliance with ISO27001 standard and Australian regulations.",
       "Designed and implemented APIs, authentication, and middleware in Django for deployment on AWS Fargate.",
-      "Collaborated with UI/UX designer to create consistent and clear user interface and flows.",
+      "Collaborated with a UI/UX designer to create consistent and clear user interface and flows.",
     ],
   },
   {
